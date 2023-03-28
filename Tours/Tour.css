@@ -1,0 +1,785 @@
+body { margin: 0; padding: 0;
+    /* background-image: url("images/Picture\ 1.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: top;
+    background-blend-mode: lighten; */
+    }
+
+
+
+#map {
+    position: absolute;
+    left: 22%;
+    width: 78%;
+    height: 96%;
+    margin: 40px 0 0 0;
+    bottom: 0;
+    }
+
+/* Tour Title in Sidebar */
+.heading {
+/* min-height: 30px; */
+height: 30px;
+line-height: 60%;
+background-color: #f1bc41;
+color: #000000;
+font-family: 'Inter Tight', sans-serif;
+font-size: 9px;
+padding: 4px 0;
+margin: 33px 0 0 0;
+text-align: center;
+border-radius: 3px;
+}
+
+.sidebar h1 {
+  font-weight: 300;
+}
+
+/* Map Legend */
+.mapLegend {
+  position: absolute;
+  bottom: 35px;
+  right: 0px;
+  font-family: 'Inter Tight', sans-serif;
+  margin-bottom: 10px;
+  padding: 0 15px;
+  padding-bottom: 5px;
+  width: 105%;
+  max-height: 500px;
+  border: 1px solid #eee;
+  font-size: 12px;
+  line-height: 1.2;
+  color: #222;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 6px;
+  backdrop-filter: blur(8px);
+  transition-property: max-height;
+  visibility: hidden;
+  transition: 300ms ease-in;
+
+}
+
+.mapLegend ul {
+list-style-type: none; /* Remove bullets */
+columns: 1;
+column-gap: 0px;
+/* -moz-column-gap: 90px;
+-webkit-column-gap: 90px; */
+-webkit-columns: 1;
+-moz-columns: 1;
+line-height: 1.6;
+padding: 0px;
+margin-right: 0px;
+margin-top: 10px;
+margin-bottom: -13px;
+}
+
+.mapLegend h4 {
+  margin-top: 5px;
+  margin-bottom: 2px;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 0;
+}
+
+.mapLegend img {
+  vertical-align: middle;
+}
+
+/* Styling for Map Legend container */
+.main-container {
+  width: 12%;
+  margin-bottom: 30px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter Tight', sans-serif;
+
+} 
+.coll-btn {
+  background-color: transparent;
+  color: #000000;
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  border: none;
+  cursor: pointer;
+  padding-top: 3.5px;
+  padding-right: 12px;
+
+}
+
+/*IMPORTANT*/
+
+.coll-container {
+  bottom: 25px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 13%;
+  position: absolute;
+}
+
+.coll-header {
+  width: auto;
+  height: auto;
+  margin-right: -80px;
+  color: #48a2b8;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+  background-color: #fac345e2;
+  border: 0.5px solid #a68a47ad;
+  border-radius: 8px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 10px 2px rgba(0,0,0,.1);
+  text-align: center;
+}
+
+.coll-header:hover {
+  border: 2px solid #75757583;
+
+}
+
+.coll-header:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 15px;
+  content: '\f0c9';
+  color: #000000;
+  font-weight: bold;
+  float: left;
+  padding: 7px 12px;
+}
+
+/* .coll-content { */
+  /* opacity: 0;
+  visibility: hidden;
+  padding: 10px;
+  border: 0.5px solid #eee; */
+  /* box-shadow: 0px 0px 4px 0px rgba(15, 15, 15, 0.2); */
+  /* margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-self: center;
+  vertical-align: middle ;  
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #222;
+  width: 98%;
+  max-height: fit-content;
+  transition-property: max-height; */
+  /* transition: 300ms ease-in; */
+/* } */
+
+  /*END*/
+
+  /* Sidebar listings */
+.sidebar {
+    position: absolute;
+    width: 22%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    /* border-right: 1px solid rgba(0, 0, 0, 0.25); */
+  }
+
+
+
+/* HEADER MENU AND SITE NAVIGATION */
+
+.headerBanner {
+  width: 100%;
+  padding-bottom: 10px;
+  top: 0;
+  background-color: rgba(238, 238, 238, 0.582);
+}
+
+.headertitle {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 45%;
+  padding-top: 1px;
+  font-family: 'MuseoModerno', cursive;
+  line-height: 0%;
+  text-align: center;
+  color:#000;
+  }
+
+  .headertitle h1 {
+    margin-top: 15px;
+  }
+  .headertitle a{
+      text-decoration: none;
+      font-family: 'MuseoModerno', cursive;
+      font-weight: 200;
+      font-size: 28px;
+      color: #000 ;
+      }
+  
+  .headertitle a:hover{
+      color: #f1bc41;
+  }
+
+/* Add a black background color to the top navigation */
+.topnav {
+    overflow: hidden;
+    height: 25px;
+    padding-right: 10px;
+    margin-right: 0px;
+    min-height: 25px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: right;
+    margin-right: 5px;
+    color: #797979;
+    text-align: center;
+    padding: 8px 0.5%;
+    text-decoration: none;
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: transparent;
+    color: #f1bc41;
+    cursor: pointer;
+}
+
+/* Add a color to the active/current link */
+/* .topnav a.active {
+    background-color: #d4d1c7;
+    color: rgb(93, 93, 93);
+} */
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+@media all and (max-width: 800px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+    float: right;
+    display: block;
+    }
+}
+
+@media all and (max-width: 800px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+    position: absolute;
+    right: 28%;
+    top: 0;
+    }
+    .topnav.responsive a {
+    float: right;
+    display: block;
+    text-align: right;
+    z-index: 1;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+  #map {
+    height: 97%;
+    left: 20%;
+    width: 80%;
+  }
+
+  .sidebar {
+    width: 20%;
+    height: 100%;
+  }
+
+  .legend {
+    height: 20%;
+  }
+
+  .heading {
+    margin-top: 40px;
+  }
+
+}
+
+@media screen and (max-width: 1400px) {
+  .coll-btn {
+    display: none;
+  }
+
+  .coll-header {
+    width: auto;
+    margin-right: -80%;
+
+  }
+
+  .coll-header::after {
+    padding: 2px 10px;
+  }
+
+  .mapLegend {
+    width: 250%;
+  }
+
+  .mapLegend ul {
+    columns: 2;
+  }
+
+}
+
+@media all and (max-width: 800px) {
+
+    #map {
+      left: 0%;
+      width: 100%;
+      height: 96%;
+      left: 0;
+    }
+
+    .sidebar {
+      display: none;
+    }
+
+    .headertitle {
+      left: 42%;
+    }
+    .headertitle a {
+      font-size: 22px;
+    }
+
+    .h2, .coll-btn {
+    display: none;
+    }
+
+    .coll-header {
+      width: auto;
+      margin-right: 0px;
+      margin-bottom: 10px;
+    }
+
+    .coll-header::after {
+      padding: 2px 10px;
+    }
+    
+    .mapLegend {
+      margin-bottom: 0px;
+      width: 250%;
+    }
+}
+
+
+
+@media screen and (max-height: 760px),
+screen and (max-width: 1400)
+{
+
+  #map {
+    height: 95%;
+    left: 22%;
+    width: 78%;
+  }
+
+  .sidebar {
+    width: 22%;
+  }
+
+  .h2, .coll-btn {
+    display: none;
+    }
+
+  .coll-header {
+    width: auto;
+  }
+
+  .coll-header::after {
+    padding: 2px 10px;
+  }
+  
+  .mapLegend {
+    width: 230%;
+  }
+/*   .mapLegend ul {
+    columns: 2;
+  } */
+
+  .legend {
+    margin-top: -10px;
+  }
+}
+
+@media all and (max-width: 415px) {
+
+  .mapLegend {
+    width: 660%;
+  }
+
+  .headertitle {
+    text-align: left;
+    left: 10px;
+  }
+
+  #map {
+    width: 100%;
+    left: 0;
+  }
+
+
+}
+
+@media all and (max-height: 390px) {
+  #map {
+    height: 90%;
+    width: 100%;
+    left: 0;
+  }
+
+
+}
+
+
+/* Style for attractions list */
+.listings {
+    height: 73%; /*72%*/
+    overflow: auto;
+    padding-bottom: 20px;
+    font-family: 'Inter Tight', sans-serif;
+    display: block;
+  }
+  
+  .listings .item {
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+  }
+  
+  .listings .item:last-child { border-bottom: none; }
+  
+  .listings .item .title {
+    display: block;
+    color: #48a2b8;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 13px;
+    margin-left: 0px;
+  }
+
+  .pin img {
+    margin-left: 0;
+    margin-top: 0em;
+    vertical-align: middle;
+  }
+
+  .pinTitle {
+    margin-left: -1.5em;
+    margin-top: -0.1em;
+    padding-right: 5px;
+    color:#000;
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .listings .item .details {
+    padding-right: 0;
+    font-size: 11.5px;
+    color: #252525;
+     font-weight: 400;
+  }
+  
+
+  .listings .item .details ul {
+    padding-left: 15px;
+    margin-top: 2px;
+    font-size: 12px;
+    list-style-type: none; /* Remove bullets */
+
+  }
+
+  .listings .item .details a {
+    text-decoration: none;
+    color: #48a2b8;
+  }
+
+  .listings .item .details a:hover {
+    color: #f1bc41;
+  }
+  
+  .listings .item .title small { font-weight: 400; }
+  
+  .listings .item.activeList .title,
+  .listings .item .title:hover { color: #15a438; } /*red: d60d46*/
+
+  .listings .item.active .title 
+  { color: #f1bc41; } /*red: d60d46*/
+  
+  .listings .item.active,
+  .listings .item.activeList {
+    background-color: #f8f8f8;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+    border-left: 0;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: none;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #48a2b8;
+    border-radius: 3px;
+  }
+
+.legend {
+    display: flex;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    border-top: 1px solid #eee;
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 12px;
+    padding: 0 12px;
+    padding-bottom: 10px;
+}
+
+
+.legend p {
+    vertical-align: text-top;
+    overflow-wrap: break-word;
+}
+
+.legend ul {
+  list-style-type: none; /* Remove bullets */
+  columns: 2;
+  column-gap: 15px;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  line-height: 2;
+  padding-left: 3%;
+  padding-top: 5%;
+  margin-top: auto;
+}
+
+
+#menu {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgb(255,255,255, 0.8);
+    color: #797979;
+    padding: 10px 10px;
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    
+    }
+
+#layernav {
+background: transparent;
+position: absolute;
+bottom: 40px;
+left: 25%;
+width: 50%;
+font-family: 'Inter Tight', sans-serif;
+font-size: 11px;
+display: block;
+}
+    
+/* #layernav a {
+font-size: 12px;
+color: #7f7f7f;
+background-color: #dcdcdc;
+display: block;
+margin: 0;
+padding: 5px;
+text-decoration: none;
+border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+text-align: center;
+border-radius: 5px;
+
+}
+    
+#layernav a:last-child {
+border: none;
+}
+    
+#layernav a:hover {
+background-color: #f8f8f8;
+color: #404040;
+}
+    
+#layernav a.active {
+background-color: #48a2b8;
+color: #ffffff;
+}
+    
+#layernav a.active:hover {
+background: #f1bc41;
+} */
+
+.marker {
+    border: none;
+    cursor: pointer;
+    height: 22px;
+    width: 17px;
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    color: #000000;
+    text-align: center;
+    background-image: url(../images/location-pin-solid.svg);
+  }
+
+.marker:hover,
+.marker.activeHover
+{
+    border: none;
+    cursor: pointer;
+    height: 24px;
+    width: 18px;
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+    background-image: url(../images/location-pin-solid-green.svg);
+  }
+
+.marker.activeClick {
+    border: none;
+    cursor: pointer;
+    height: 24px;
+    width: 18px;
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+    background-image: url(../images/location-pin-solid-yellow.svg);
+  }
+
+
+/* STYLE FOR POPUPS */
+.mapboxgl-popup{
+    padding-bottom: 40px;
+    margin-top: 10px;
+    width: 600px;
+    height: 300px;
+}
+
+
+.mapboxgl-popup-close-button {
+    margin-top: 5px;
+    color: rgb(158, 156, 156);
+    z-index: 999;
+}
+
+.mapboxgl-popup-anchor-top > .mapboxgl-popup-content {
+    margin-top: 0px;
+  }
+
+.mapboxgl-popup-anchor-top > .mapboxgl-popup-tip {
+    margin-top: -15px;
+    color: #000;
+    border-bottom-color: #000;
+}
+
+.mapboxgl-popup-content {
+    position: absolute;
+    inline-size: 140px;
+    overflow-wrap: break-word;
+    overflow-y: scroll;
+    font: 400 12px/11px 'Inter Tight', sans-serif;
+    padding: 0;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    margin: 0 0 10px;
+    width: 220%;
+    height: 120%;
+}
+
+.mapboxgl-popup-content h3 {
+    position: fixed;
+    width: 213%;
+    background: #f1bc41;
+    color: #000;
+    margin-top: 0;
+    padding: 8px;
+    border-radius: 3px 3px 0 0;
+    font-weight: 700;
+    font-kerning: auto;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: normal;
+}
+
+.mapboxgl-popup-content p {
+    padding: 0 10px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-weight: 400;
+    margin-top: 0px;
+    margin: 5px;
+    line-height: 1.3em;
+    display: block;
+    text-align: justify;
+    direction: rtl;
+}
+
+.mapboxgl-popup-content #img  {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.mapboxgl-popup-content #img2  {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.mapboxgl-ctrl-attrib a {
+  color: rgba(40, 40, 40, 0.657);
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 10px;
+  text-decoration:none
+}
+
+.mapboxgl-ctrl-attrib .mapbox-improve-map {
+  font-weight: 700;
+  margin-left:2px
+}
+  
+  
+#info {
+  display: table;
+  position: relative;
+  bottom: -524px;
+  margin: 0px auto;
+  border: 1px solid #0f0101;
+  word-wrap: anywhere;
+  white-space: pre-wrap;
+  padding: 10px;
+  border-radius: 3px;
+  font-size: 12px;
+  text-align: center;
+  color: #222222;
+  background: #ffffff00;
+  background-color: hsla(0,0%,100%,.9);
+}

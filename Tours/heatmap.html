@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tourist Atlas</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- GOOGLE FONTS -->
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Fjalla+One&family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,700;1,400&family=MuseoModerno:ital@0;1&display=swap" rel="stylesheet">
+<!-- FONT AWESOME -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/e1e6165088.js" crossorigin="anonymous"></script>
+<!-- MAPBOX -->
+<link href="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.js">
+</script>
+<!-- Load the `mapbox-gl-geocoder` plugin. -->
+<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js"></script>
+<link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css" type="text/css">
+ <!-- CSS Stylesheet -->
+<link rel="stylesheet" href="../Tours/Tour.css"> 
+</head>
+<body>
+<div class="headerBanner">
+    <div class="headertitle">
+      <h3>نطاقات تركز المواقع السياحية بالإقليم</a></h3>
+  </div>
+  <div class="topnav" id="myTopnav">
+    <a class="active" href="../Tours/historical.html" title="Next Tour"><i class="fa-solid fa-forward"></i></a>
+    <!--<a class="active" href="../index.html" title="Previous Tour"><i class="fa-solid fa-backward"></i></a> -->
+    <a class="active" href="../index.html" title="Tours Page"><i class="fa-solid fa-signs-post"></i></a>
+    <a class="active" href="../About.html" title="About"><i class="fa-solid fa-circle-info"></i></a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+<!-- Script for Responsive Topnav  -->
+<script> function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+<!-- Embed JS Code for Main Map-->
+<div id="map"></div>
+<!-- Map Legend -->
+<div class="main-container">
+  <div class="coll-container">
+    <div class="coll-header"><button class="coll-btn">Legend</button></div>
+    <div class="mapLegend" style="width: fit-content;">
+        <div><img src="../images/Untitled-1.svg" width="15">&nbsp; أقل من 3</div>
+        <div><img src="../images/Untitled-2.svg" width="15">&nbsp; من 3-6 </div>
+        <div><img src="../images/Untitled-3.svg" width="15">&nbsp;  من 6-9 </div>
+        <div><img src="../images/Untitled-4.svg" width="15">&nbsp; من 9-12 </div>
+        <div><img src="../images/Untitled-5.svg" width="15">&nbsp; أكثر من 12 </div>
+</div>
+<script>
+//Collapse Content Container 
+let collapseContent = document.getElementsByClassName("mapLegend")[0];
+//Collapse Header (toggle button)
+let collapseHeader = document.getElementsByClassName("coll-header")[0];
+//Always Starts in Hidden Mode
+collapseContent.style.visibility = "hidden";
+//Custom Javascript (You can Implement it in a better way!) (ES6)
+collapseHeader.onclick = () => {
+  if(collapseContent.style.visibility == "hidden") {
+    collapseContent.style.visibility = "visible";
+    collapseContent.style.opacity = "1";
+    collapseContent.style.maxHeight = "500px";
+  } else if (collapseContent.style.visibility == "visible") {
+    collapseContent.style.visibility = "hidden";
+    collapseContent.style.opacity = "0";
+    // collapseContent.style.maxHeight = "0px";
+  }
+}
+</script>
+<script src="../Tours/heatmap.js"> </script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tourist Atlas</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- GOOGLE FONTS -->
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Fjalla+One&family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,700;1,400&family=MuseoModerno:ital@0;1&display=swap" rel="stylesheet">
+<!-- FONT AWESOME -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/e1e6165088.js" crossorigin="anonymous"></script>
+<!-- MAPBOX -->
+<link href="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.js">
+</script>
+<!-- Load the `mapbox-gl-geocoder` plugin. -->
+<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js"></script>
+<link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css" type="text/css">
+ <!-- CSS Stylesheet -->
+<link rel="stylesheet" href="../Tours/Tour.css"> 
+
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="heading">
+          <h1 style="font-weight: 300">معالم السياحة الثقافية </h1>
+        </div>
+        <div id='listings' class='listings'></div>
+        </div>
+    </div>
+
+<!-- Basemap Styles Menu -->
+  <div class="headerBanner">
+    <div class="headertitle">
+      <h1><a href="../index.html">أطلس إقليم جنوب الصعيد السياحى</a></h1>
+  </div>
+  <div class="topnav" id="myTopnav">
+    <a class="active" href="../Tours/religon.html" title="Next Tour"><i class="fa-solid fa-forward"></i></a>
+    <a class="active" href="../Tours/entertainment.html" title="Previous Tour"><i class="fa-solid fa-backward"></i></a>
+    <a class="active" href="../index.html" title="Tours Page"><i class="fa-solid fa-signs-post"></i></a>
+    <a class="active" href="../About.html" title="About"><i class="fa-solid fa-circle-info"></i></a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+<!-- Script for Responsive Topnav  -->
+<script> function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+<!-- Embed JS Code for Main Map-->
+<div id="map"></div>
+<div id="menu">
+  <input id="nassershawkey/clf0rhx3q002701qhulllo023" type="radio" name="rtoggle" value="satellite" checked="checked">
+  <!-- See a list of Mapbox-hosted public styles at -->
+  <!-- https://docs.mapbox.com/api/maps/styles/#mapbox-styles -->
+  <label for="nassershawkey/clf0rhx3q002701qhulllo023">Default</label>
+  <input id="nassershawkey/clf48iyeh008401qajju8656j" type="radio" name="rtoggle" value="light">
+  <label for="nassershawkey/clf48iyeh008401qajju8656j">Satellite </label>
+  <input id="nassershawkey/clf4aihio000n01ntmg24v8he" type="radio" name="rtoggle" value="dark">
+  <label for="nassershawkey/clf4aihio000n01ntmg24v8he">Dark</label>
+  <input id="nassershawkey/clf4akqbz001q01o90wz1x801" type="radio" name="rtoggle" value="outdoors">
+  <label for="nassershawkey/clf4akqbz001q01o90wz1x801">Outdoors</label>
+  </div>
+<!-- Map Legend -->
+<div class="main-container">
+  <div class="coll-container">
+    <div class="coll-header"><button class="coll-btn">Legend</button></div>
+    <div class="mapLegend"style="width: fit-content;">
+      <ul><img src="../images/location-pin-solid.svg" width="12">&nbsp;معلم سياحى</ul>
+      <ul><img src="../images/bordeereg.svg" width="20">&nbsp; حدود دولــية </ul>
+      <ul><img src="../images/tourRoute.png" width="15">&nbsp;مسار جولة </ul>    
+   <br>
+   <br>
+   </div>
+  </div>
+</div>
+<script>
+//Collapse Content Container 
+let collapseContent = document.getElementsByClassName("mapLegend")[0];
+//Collapse Header (toggle button)
+let collapseHeader = document.getElementsByClassName("coll-header")[0];
+//Always Starts in Hidden Mode
+collapseContent.style.visibility = "hidden";
+//Custom Javascript (You can Implement it in a better way!) (ES6)
+collapseHeader.onclick = () => {
+  if(collapseContent.style.visibility == "hidden") {
+    collapseContent.style.visibility = "visible";
+    collapseContent.style.opacity = "1";
+    collapseContent.style.maxHeight = "500px";
+  } else if (collapseContent.style.visibility == "visible") {
+    collapseContent.style.visibility = "hidden";
+    collapseContent.style.opacity = "0";
+    // collapseContent.style.maxHeight = "0px";
+  }
+}
+</script>
+<pre id="info"></pre>
+<script src="../Tours/culture.js"> </script>
+</body>
+</html>

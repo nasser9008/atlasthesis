@@ -1,0 +1,103 @@
+Customer,Street,City,Annual revenue [€],Latitude,Longitude
+Holger Bader,Herzogstr. 28,München ,1669,48.162646,11.582118
+Alois Baier,Agnesstr. 36,München ,160,48.157967,11.566949
+Theodor Licht,Hans-Sachs Str. 16,München ,1689,48.129387,11.569485
+Malte Burginski,Sendlinger Strasse 50,München ,1408,48.134692,11.568618
+Eike Riemer,Leopoldstrasse 48,München ,3152,48.157654,11.585089
+Hauke Sorge,Hanauer Strasse 68,München ,3473,48.183576,11.532573
+Pjotr Kempinski,Kastenbauer Str. 2,München ,2394,48.137106,11.640109
+Kalle Holzhäuser,Willy-Brandt-Platz 5,München ,3557,48.13255,11.69238
+Greg Levein,Augustenstr. 74,München ,4329,48.150173,11.563827
+Karl Bayer,Lindwurmstr. 87,München ,667,48.129011,11.557824
+Albert Gärtner,Nymphenburger Str. 160,München ,117,48.153003,11.5341
+Sabine Gleichmann,Gleichmannstr. 2,München ,2135,48.147021,11.460033
+Sascha Vetter,Rosenkavalierplatz 5,München ,2440,48.152682,11.619821
+Sedat Altun,Kurfürstenplatz 4,München ,3338,48.159768,11.575497
+Erol Güzelol,Leopoldstr. 68,München ,3305,48.159929,11.586053
+Susanne Talströfer,Dachauerstr. 411,München ,316,48.179671,11.5134
+Tamer Hasan,Bäckerstr. 3,München ,3099,48.14803,11.461704
+Matthias Ballmann,Plinganser Str. 37,München ,1589,48.1179,11.540633
+Nuran Salman,Waldfriedhofstr. 115,München ,2360,48.11186,11.50343
+Dan Kreis,Machtlfinger Str. 4,München ,2331,48.097298,11.512668
+Tayfun Özdalyan,Orleansplatz 11,München ,884,48.127608,11.604114
+Ali Ugur Dolgun,Rosenheimer Str. 52,München ,398,48.128472,11.593215
+Thorsten Methner,Albert-Schweitzer-Str. 78,München ,2476,48.106557,11.645671
+Jürgen Neuhaus,Willy-Brand-Platz 5,München ,3034,48.13255,11.69238
+Tanja Schäfer,Pestalozzi Str. 2,München ,2903,48.132373,11.567839
+Ismail Kücük ,Holz Str. 23,München ,3619,48.129482,11.568231
+Johann Winter,Karlsplatz 5,München ,2230,48.139808,11.566564
+Navi Angelov,Lindwurmstr. 36,München ,886,48.128365,11.555389
+Natascha Angelov,Lindwurmstr. 36,München ,3831,48.128365,11.555389
+Detlef Fraitzner,Rumfordstr. 57,München ,386,48.1339,11.582342
+Mandy Rittberger,Notburgastr. 4,München ,1038,48.157664,11.511152
+Terzis Selcuk,Fürstenrieder Str. 151,München ,1051,48.1382902,11.5023438
+Michael Meissner ,Fürstenrieder Str. 31,München ,447,48.139104,11.503443
+Mohammed Arslan,Leopoldstr. 62,München ,3986,48.159533,11.585885
+Konrad Wegener,Leopoldstr. 68,München ,1924,48.159929,11.586053
+Kris Malkin,Leopoldstr. 91,München ,1824,48.163463,11.586033
+Franz Steve ,Bäckerstr. 3,München ,3470,48.14803,11.461704
+Gunnar Müller ,Waldfriedhofstr. 115,München ,172,48.11186,11.50343
+Ismail Kücük ,Innere Wiener Str. 54,München ,1290,48.134362,11.597357
+Öztürk Turgay,Wasserburger Landstr. 207,München ,2438,48.113579,11.700848
+Emanuelle Regard,Sonnenstr. 16,München ,2479,48.136564,11.564226
+Zak Houston,Zentnerstr. 21,München ,1244,48.156628,11.563368
+Ützgur Schmidt,Tal 10,München ,583,48.135962,11.578337
+Pierre Giesing,Bahnhofsplatz 2,München ,3437,48.148594,11.460348
+Helmut Schöneiche,Tegernseer Platz 3,München ,3223,48.115584,11.579574
+Dörte Fellmaier,Weißenburger Str. 37,München ,4581,48.128444,11.601229
+Andreas Koos,Manzinger Weg 6 a,München,1999,48.147895,11.457419
+Kilian May,theodor-Storm-Straße 12,München,1366,48.152156,11.458719
+Siegfried Kaiser,Volkartstraße 28,München,3463,48.155859,11.535528
+Otto Mayer,Julius-Kreis-Straße 29,München,4321,48.161743,11.450407
+Norbert Reis,Agnes-Bernauer-Straße 239,München,4191,48.141766,11.477869
+theresia Blüml,Neufeldstraße 9,München,2250,48.145267,11.451473
+Franz Xaver Völkl,Bäckerstraße 19,München,4693,48.144739,11.461695
+Hubert Weber,Gräfstraße 105,München,4093,48.142536,11.462511
+Gudrun Koppers-Weck,Floßmannstraße 9,München,3551,48.152471,11.463318
+Peter Denk,Am Schützeneck 10,München,309,48.148056,11.460506
+Johannes Eichhorn,Betschartstraße 18,München,1284,48.143832,11.447915
+Georg Ninaus,Balanstraße 16,München,1752,48.12679,11.59455
+Peter Lohmaier,Feichthofstrasse 27,München,4533,48.157926,11.476241
+Ingeborg Strahlendorf,Landsberger Straße 283,München,2268,48.142525,11.506608
+Maximilian Murr,Bodenseestraße 10,München,584,48.147155,11.45775
+Robert Schlagenhaufer,Pfeivestlstraße 41,München,2485,48.138356,11.44185
+Elke Kapell,Ebracher Straße 1,München,4619,48.151909,11.432738
+Georg Felbermayr sen.,Scheurlinstraße 3,München,1789,48.137998,11.459795
+Peter Altinger,Agnes-Bernauer-Straße 239,München,598,48.141766,11.477869
+Norbert Heß,Clemensstraße 65,München,3295,48.163261,11.575155
+Peter Krieger,Fischer-von-Erlach-Straße 26,München,77,48.137843,11.479798
+Dr. Peter H. Otto,Weinbergerstraße 55,München,3014,48.140129,11.464589
+Walter Hölscher,Benedikterstraße 6,München,41,48.141833,11.468761
+Willi Tremmel,Aubinger Straße 12,München,3368,48.147969,11.446756
+Peter Dietl,Amalienstraße 24,München,3490,48.147124,11.576601
+Hermann Ganserer,Georg-Habel-Straße 49,München,4723,48.142961,11.464717
+Hartmut Brömstrup,Volmstraße 4,München,1801,48.148469,11.451683
+Karl Weigert,Gräfstraße 101,München,3128,48.14255,11.462987
+Herrn Peter Röhl,Herzogstraße 4,München,1787,48.162224,11.584887
+Harald Edelmann,Nimmerfallstraße 40,München,4212,48.149492,11.469356
+Frieder Vogelsgesang,Pippinger Straße 115,München,2359,48.167859,11.457103
+Peter Igl,Karwinskistraße 45,München,2021,48.168003,11.465603
+Christoph Hahn,Stöberlstraße 69 b,München,3763,48.138794,11.494607
+Karl Grandl,Faistenlohestraße 6,München,2039,48.169442,11.46675
+Martin Murr,Polkostraße 53,München,4494,48.158719,11.44613
+Wolfgang Babl,Passionistenstraße 12,München,1559,48.164376,11.461697
+Stefan Bierling,Heerstraße 48,München,2670,48.168305,11.470403
+Manfred Sommerer,Münchhausenstraße 21,München,2508,48.164492,11.481323
+Caroline Villwock,Grandlstraße 5,München,1365,48.163592,11.46317
+Hans Menzinger,An der Würm 1,München,1912,48.165497,11.459332
+Helmut Stangl,Dorfstraße 23,München,4529,48.167901,11.461046
+Willi Fries,Sipplinger Straße 8,München,4445,48.147318,11.432407
+Franziska Miroschnikof,Grandlstraße 26,München,3767,48.161331,11.462059
+Christa Stock,Pippinger Straße 113,München,3080,48.16767,11.457127
+Georg Angermair,Pippinger Straße 119,München,1651,48.16849,11.457054
+Peter Frommelt,Haimhauserstraße 10,München,2746,48.162226,11.58923
+Horst Kölbl,Hubert-Beckers-Straße 27,München,437,48.178622,11.473318
+Ulrich Goldmann,Meyerbeerstraße 115,München,2148,48.163597,11.466798
+Walter Seitz,Meyerbeerstraße 113,München,186,48.162917,11.467018
+Peter Zahren,Grandlstraße 44,München,3082,48.159435,11.462463
+Eugen Beck,Burgunderstraße 9,München,942,48.171841,11.56589
+Sonja Isherwood,Jaspersallee 9,München,3230,48.164347,11.439322
+Peter Nickl, Schloss Blutenburg,München,1966,48.1391258,11.5802193
+Willi Franz,Tschaikowskystraße 3,München,2925,48.161332,11.438583
+Andreas Ellmaier,Döbereinerstraße 18 a,München,2786,48.167216,11.480126
+Dieter Bamberg,Verdistraße 45,München,2348,48.164309,11.475916
